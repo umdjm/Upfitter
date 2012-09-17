@@ -1,0 +1,57 @@
+div{
+  border-width:1px;
+  border:solid;
+}
+
+#draggable {
+  width: 150px;
+  height: 150px;
+  padding: 0.5em;
+}
+#demo {
+  border:solid;
+  clear:both;
+  margin-top:150px;
+}
+#container {
+  position:absolute;
+  top:0px;
+  left:0px;
+  z-index:-1;
+}
+
+.container-row{
+  height: 15px;
+  margin-bottom:35px;
+}
+.container-box {
+  border:solid;
+  width: 24px;
+  height: 22px;
+  float:left;
+}
+.ui-state-active
+  {
+  opacity:.4;
+}
+
+#outer-shell {
+  margin-top:48px;
+  margin-left:18px;
+  width:530px;
+  height: 100px;
+}
+#left-container {
+  float:left;
+}
+#mid-container {
+  margin-left:33px;
+  float:left;
+}
+#mid-container .container-box {
+  width:33px;
+}
+#right-container {
+  margin-left:45px;
+  float:left;
+}
