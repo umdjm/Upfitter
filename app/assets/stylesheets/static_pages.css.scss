@@ -17,23 +17,19 @@
 
 .container-row{
   height: 15px;
-  margin-bottom:40px;
+  margin-bottom:42px;
 }
 .container-box {
-  border:none;
-  width: 28px;
-  height: 24px;
-  float:left;
-  margin-left:4px;
-}
-.ui-state-active
-  {
   background-color:red;
-  opacity:.4;
+  opacity:0;
+  border:none;
+  width: 29px;
+  height: 29px;
+  float:left;
+  margin-left:5px;
 }
-
 #outer-shell {
-  margin-top:48px;
+  margin-top:50px;
   margin-left:18px;
   width:600px;
   height: 100px;
@@ -42,11 +38,11 @@
   float:left;
 }
 #mid-container {
-  margin-left:42px;
+  margin-left:40px;
   float:left;
 }
 #mid-container .container-box {
-  margin-left:12px;
+  margin-left:10px;
 }
 
 #right-container {
