@@ -19,19 +19,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="database.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <file leaf-file-name="static_pages.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/static_pages.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="20" selection-start="1511" selection-end="1511" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="static_pages.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/static_pages.js">
+      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="5" column="49" selection-start="164" selection-end="164" vertical-scroll-proportion="0.1443124">
               <folding />
             </state>
           </provider>
@@ -50,7 +50,19 @@
         <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="23" column="77" selection-start="706" selection-end="706" vertical-scroll-proportion="-15.038462">
-              <folding />
+              <folding>
+                <marker date="1346438287000" expanded="true" signature="20:61" placeholder="..." />
+                <marker date="1346438287000" expanded="true" signature="87:1210" placeholder="..." />
+                <marker date="1346438287000" expanded="true" signature="117:558" placeholder="..." />
+                <marker date="1346438287000" expanded="true" signature="151:332" placeholder="..." />
+                <marker date="1346438287000" expanded="true" signature="366:547" placeholder="..." />
+                <marker date="1346438287000" expanded="true" signature="587:897" placeholder="..." />
+                <marker date="1346438287000" expanded="true" signature="621:886" placeholder="..." />
+                <marker date="1346438287000" expanded="true" signature="928:1201" placeholder="..." />
+                <marker date="1346438287000" expanded="true" signature="962:1059" placeholder="..." />
+                <marker date="1346438287000" expanded="true" signature="1093:1190" placeholder="..." />
+                <marker date="1346438287000" expanded="true" signature="1233:1303" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -58,25 +70,16 @@
       <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="22" selection-start="724" selection-end="724" vertical-scroll-proportion="0.0">
+            <state line="12" column="11" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="3" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="21" selection-start="643" selection-end="643" vertical-scroll-proportion="0.38699186">
+            <state line="15" column="33" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -95,9 +98,9 @@
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/static_pages.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/static_pages.css.scss" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -588,9 +591,42 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/static_pages.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="25" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="77" selection-start="706" selection-end="706" vertical-scroll-proportion="-15.038462">
+          <folding>
+            <marker date="1346438287000" expanded="true" signature="20:61" placeholder="..." />
+            <marker date="1346438287000" expanded="true" signature="87:1210" placeholder="..." />
+            <marker date="1346438287000" expanded="true" signature="117:558" placeholder="..." />
+            <marker date="1346438287000" expanded="true" signature="151:332" placeholder="..." />
+            <marker date="1346438287000" expanded="true" signature="366:547" placeholder="..." />
+            <marker date="1346438287000" expanded="true" signature="587:897" placeholder="..." />
+            <marker date="1346438287000" expanded="true" signature="621:886" placeholder="..." />
+            <marker date="1346438287000" expanded="true" signature="928:1201" placeholder="..." />
+            <marker date="1346438287000" expanded="true" signature="962:1059" placeholder="..." />
+            <marker date="1346438287000" expanded="true" signature="1093:1190" placeholder="..." />
+            <marker date="1346438287000" expanded="true" signature="1233:1303" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Configurator/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="23" selection-start="621" selection-end="643" vertical-scroll-proportion="0.37142858">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="20" selection-start="1511" selection-end="1511" vertical-scroll-proportion="0.0">
+        <state line="54" column="20" selection-start="1511" selection-end="1511" vertical-scroll-proportion="0.83361346">
           <folding />
         </state>
       </provider>
@@ -602,44 +638,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/static_pages.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="25" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="77" selection-start="706" selection-end="706" vertical-scroll-proportion="-15.038462">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="22" selection-start="724" selection-end="724" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="3" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Configurator/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="23" selection-start="621" selection-end="643" vertical-scroll-proportion="0.37142858">
+        <state line="3" column="3" selection-start="75" selection-end="75" vertical-scroll-proportion="0.08292683">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="21" selection-start="643" selection-end="643" vertical-scroll-proportion="0.38699186">
+        <state line="15" column="33" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="11" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="49" selection-start="164" selection-end="164" vertical-scroll-proportion="0.1443124">
           <folding />
         </state>
       </provider>
