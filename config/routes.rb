@@ -3,6 +3,6 @@ Upfitter::Application.routes.draw do
 
   resources :vehicles
 
-  root :to => 'static_pages#home'
+  root :to => 'vehicles#index'
 
 end
