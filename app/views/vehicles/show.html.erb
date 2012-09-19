@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @vehicle.name %>
+</p>
+
+<p>
+  <%= image_tag @vehicle.image_url %>
+</p>
+
+
+<div id="Accessories">
+  <% @accessories.each do |accessory| %>
+    <%= image_tag accessory.image_url, :class=>"Accessory", :id=>accessory.name %>
+  <% end %>
+</div>
+
+<table id="Placements">
+  <tr><th>Accessory</th><th>Position</th></tr>
+
+</table>
