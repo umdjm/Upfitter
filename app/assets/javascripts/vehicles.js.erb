@@ -20,6 +20,9 @@ $(document).ready( function () {
     );
 
     $( ".Accessory2" ).draggable({ revert: "invalid" });
+    $("#Accessories").droppable(     {
+            tolerance: "pointer"
+    });
 
     $(".Accessory").draggable({
         stop: function(event, ui) {
