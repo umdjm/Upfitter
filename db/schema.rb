@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120918173548) do
+ActiveRecord::Schema.define(:version => 20120920180718) do
 
   create_table "accessories", :force => true do |t|
     t.string   "name"
@@ -19,6 +19,20 @@ ActiveRecord::Schema.define(:version => 20120918173548) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "dropareas", :force => true do |t|
+    t.integer  "vehicle_id"
+    t.integer  "accessory_id"
+    t.integer  "left"
+    t.integer  "top"
+    t.integer  "width"
+    t.integer  "height"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  add_index "dropareas", ["accessory_id"], :name => "index_dropareas_on_accessory_id"
+  add_index "dropareas", ["vehicle_id"], :name => "index_dropareas_on_vehicle_id"
 
   create_table "vehicles", :force => true do |t|
     t.string   "name"

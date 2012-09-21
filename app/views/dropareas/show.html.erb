@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Vehicle:</b>
+  <%= @droparea.vehicle %>
+</p>
+
+<p>
+  <b>Accessory:</b>
+  <%= @droparea.accessory %>
+</p>
+
+<p>
+  <b>Left:</b>
+  <%= @droparea.left %>
+</p>
+
+<p>
+  <b>Top:</b>
+  <%= @droparea.top %>
+</p>
+
+<p>
+  <b>Width:</b>
+  <%= @droparea.width %>
+</p>
+
+<p>
+  <b>Height:</b>
+  <%= @droparea.height %>
+</p>
+
+
+<%= link_to 'Edit', edit_droparea_path(@droparea) %> |
+<%= link_to 'Back', dropareas_path %>

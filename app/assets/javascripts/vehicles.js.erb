@@ -1,0 +1,65 @@
+$(document).ready( function () {
+    $(".droparea_div").droppable( {
+            tolerance: "pointer",
+            over: function()
+            {
+                $(this).css("opacity",".4");
+            },
+            out: function()
+            {
+                $(this).css("opacity","0");
+            },
+            drop: function(event, ui)  {
+                $( ui.draggable ).position({
+                    of: $(this),
+                    my: "left top",
+                    at: "left top"
+                });
+            }
+        }
+    );
+
+    $( ".Accessory2" ).draggable({ revert: "invalid" });
+
+    $(".Accessory").draggable({
+        stop: function(event, ui) {
+            var id = event.target.id;
+            var $accessory = $("#" + id);
+
+            if($accessory.position().top > 250)
+                return;
+
+            //create div
+            var $div = $("<div></div>");
+            $div.css( {
+                'background-color' : 'red',
+                'opacity' : '.4',
+                'width': $accessory.width(),
+                'height': $accessory.height(),
+                'top': $accessory.position().top,
+                'left' : $accessory.position().left,
+                'position': 'absolute'
+
+            });
+            $("#Vehicle").append($div);
+
+            $.ajax({
+                url: '/dropareas#create',
+                type: 'post',
+                dataType: 'json',
+                data:{
+                    droparea:
+                    {
+                        accessory_id: 1,
+                        vehicle_id:1,
+                        height: $accessory.height(),
+                        left: $accessory.position().left,
+                        top: $accessory.position().top,
+                        width: $accessory.width()
+                    }
+                }
+            });
+            $('#dropareas').load('/vehicles/1/show_dropareas');
+        }
+    });
+});

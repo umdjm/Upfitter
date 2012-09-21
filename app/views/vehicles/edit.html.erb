@@ -1,6 +1,25 @@
-<h1>Editing vehicle</h1>
 
-<%= render 'form' %>
+<p id="notice"><%= notice %></p>
 
-<%= link_to 'Show', @vehicle %> |
-<%= link_to 'Back', vehicles_path %>
+<div id="Vehicle">
+  <%= image_tag @vehicle.image_url %>
+</div>
+
+
+<div id="Accessories">
+  <% @accessories.each do |accessory| %>
+      <%= image_tag accessory.image_url, :class=>"Accessory", :id=>accessory.name.gsub(/\s+/, "") %>
+  <% end %>
+</div>
+
+<div id="dropareas">
+  <%= render 'dropareas' %>
+</div>
+
+
+<div id="droparea_divs">
+  <% @vehicle.dropareas.each do |droparea| %>
+      <div style="<%=get_style(droparea)%>">
+      </div>
+  <% end %>
+</div>

@@ -36,6 +36,7 @@ class VehiclesController < ApplicationController
   # GET /vehicles/1/edit
   def edit
     @vehicle = Vehicle.find(params[:id])
+    @accessories = Accessory.all
   end
 
   # POST /vehicles
@@ -81,4 +82,10 @@ class VehiclesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def show_dropareas
+    @vehicle = Vehicle.find(params[:id])
+    render :partial => "dropareas"
+  end
+
 end

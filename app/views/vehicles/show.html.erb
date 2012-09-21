@@ -1,22 +1,20 @@
+
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Vehicle Name:</b>
-  <%= @vehicle.name %>
-</p>
-
-<p>
+<div id="Vehicle">
   <%= image_tag @vehicle.image_url %>
-</p>
+</div>
 
 
 <div id="Accessories">
   <% @accessories.each do |accessory| %>
-    <%= image_tag accessory.image_url, :class=>"Accessory", :id=>accessory.name %>
+    <%= image_tag accessory.image_url, :class=>"Accessory2", :id=>accessory.name.gsub(/\s+/, "") %>
   <% end %>
 </div>
 
-<table id="Placements">
-  <tr><th>Accessory</th><th>Position</th></tr>
-
-</table>
+<div id="droparea_divs">
+  <% @vehicle.dropareas.each do |droparea| %>
+    <div class="droparea_div" style="<%=get_style2(droparea)%>">
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,36 @@
+<%= form_for(@droparea) do |f| %>
+  <% if @droparea.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@droparea.errors.count, "error") %> prohibited this droparea from being saved:</h2>
+
+      <ul>
+      <% @droparea.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+    <%= collection_select(:droparea, :vehicle_id, Vehicle.all, :id, :name) %>
+    <%= collection_select(:droparea, :accessory_id, Accessory.all, :id, :name) %>
+
+  <div class="field">
+    <%= f.label :left %><br />
+    <%= f.number_field :left %>
+  </div>
+  <div class="field">
+    <%= f.label :top %><br />
+    <%= f.number_field :top %>
+  </div>
+  <div class="field">
+    <%= f.label :width %><br />
+    <%= f.number_field :width %>
+  </div>
+  <div class="field">
+    <%= f.label :height %><br />
+    <%= f.number_field :height %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,24 @@
+
+<table id="droparea_table">
+  <tr>
+    <th>Vehicle</th>
+    <th>Accessory</th>
+    <th>Left</th>
+    <th>Top</th>
+    <th>Width</th>
+    <th>Height</th>
+  </tr>
+  <% @vehicle.dropareas.each do |droparea| %>
+      <tr>
+        <td><%= droparea.vehicle.name %></td>
+        <td><%= droparea.accessory.name %></td>
+        <td><%= droparea.left %></td>
+        <td><%= droparea.top %></td>
+        <td><%= droparea.width %></td>
+        <td><%= droparea.height %></td>
+        <td><%= link_to 'Show', droparea %></td>
+        <td><%= link_to 'Edit', edit_droparea_path(droparea) %></td>
+        <td><%= link_to 'Destroy', droparea, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+  <% end %>
+</table>
