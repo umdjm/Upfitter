@@ -74,9 +74,10 @@ class DropareasController < ApplicationController
   def destroy
     @droparea = Droparea.find(params[:id])
     @droparea.destroy
+    @vehicle = Vehicle.find(1)
 
     respond_to do |format|
-      format.html { redirect_to dropareas_url }
+      format.html { redirect_to @vehicle }
       format.json { head :no_content }
     end
   end
