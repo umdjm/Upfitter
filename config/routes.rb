@@ -19,6 +19,6 @@ Upfitter::Application.routes.draw do
   end
 
 
-  root :to => 'vehicles#index'
+  root :to => 'static_pages#index'
 
 end

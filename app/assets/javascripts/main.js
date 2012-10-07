@@ -10,10 +10,10 @@ $(document).ready(function(){
 
 var homeContent = 'home.html';
 
-var selectVehicleContent = 'selectvehicle.html';
-var selectVehicleTimeline = "selectvehicletimeline.html";
-var upfitVehicleContent = 'upfitvehicle.html';
-var upfitVehicleTimeline = "upfitvehicletimeline.html";
+var selectVehicleContent = '/static_pages/selectvehicle.html';
+var selectVehicleTimeline = "/static_pages/selectvehicletimeline.html";
+var upfitVehicleContent = '/static_pages/upfitvehicle.html';
+var upfitVehicleTimeline = "/static_pages/upfitvehicletimeline.html";
 
 
 /* Step AJAX Calls */
@@ -40,15 +40,15 @@ function loadHome () {
 
 function selectVehicle () {
 	$('.mainContainer')
-        .load("../vehicles/1#vehicles");
-	//.load(selectVehicleContent + ' #selectVehicleContent');
+	.load(selectVehicleContent + ' #selectVehicleContent');
 	footerFix();
 }
 
 
 function upfitVehicle () {
-	$('.mainContainer')
-	.load(upfitVehicleContent + ' #upfitVehicleContent');
+	$('.mainContainer').load("../vehicles/1#vehicles");
+	//.load(upfitVehicleContent + ' #upfitVehicleContent');
+
 	footerFix();
 }
 
@@ -75,6 +75,11 @@ $(document).on("click", ".loginRegister", function(event){
 	stepThree();
 });
 
+$(document).on("click", ".transit-vehicle", function(event){
+    stepThree();
+});
+
+
 
 /* Garage Animations */
 
@@ -93,9 +98,9 @@ function garageAnimation () {
 function stepThree () {
 	$('body').removeClass();
 	$('body').addClass('garage');
-	$('.parentContainer').animate({		
+	$('.parentContainer').css({
   		'background-position-x': '0%'
-		}, 1000, 'easeOutExpo');
+		});
 
 		upfitVehicle();	
 		timelineUpfitVehicle();
@@ -105,11 +110,12 @@ function stepThree () {
 function stepTwo () {
 	$('body').removeClass();
 	$('body').addClass('select');
-	$('.parentContainer').css({
-  		'background-position-x': '50%'});
+    $('.parentContainer').animate({
+        'background-position-x': '50%'
+    });
 		
 		selectVehicle();
-		//timelineSelectVehicle();
+		timelineSelectVehicle();
 		return false;
 }
 
@@ -118,7 +124,7 @@ function goHome () {
 	$('body').addClass('home');
 	$('.parentContainer').animate({		
   		'background-position-x': '100%'
-		}, 1000, 'easeOutExpo');
+		});
 		
 		loadHome();
 		return false
