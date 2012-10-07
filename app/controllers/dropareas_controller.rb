@@ -5,7 +5,7 @@ class DropareasController < ApplicationController
     @dropareas = Droparea.all
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html # index.html.erb.erb
       format.json { render json: @dropareas }
     end
   end
@@ -77,7 +77,7 @@ class DropareasController < ApplicationController
     @vehicle = Vehicle.find(1)
 
     respond_to do |format|
-      format.html { redirect_to @vehicle }
+      format.html { redirect_to edit_post_url(@vehicle) }
       format.json { head :no_content }
     end
   end

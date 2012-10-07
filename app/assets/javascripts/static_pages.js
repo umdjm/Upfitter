@@ -26,8 +26,6 @@ $(document).ready( function () {
                     my: "left top",
                     at: "left top"
                 });
-                // Step 3) Find Collisions
-                // Step 4) Resolve Collisions   */
             }
         }
     );

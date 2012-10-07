@@ -1,0 +1,18 @@
+/* Ford.com Font Face Linking */
+
+@font-face  {    
+	font-family: 'fordngbs-antenna-small';
+src:  url('http://www.ford.com/resources/ford/general/typefaces/Antenna/small/regular.eot');
+ /*IE9 Compatibility Mode*/src:  url('http://www.ford.com/resources/ford/general/typefaces/Antenna/small/regular.eot?#iefix') format('embedded-opentype'),   /* IE6-IE8 */url('http://www.ford.com/resources/ford/general/typefaces/Antenna/small/regular.woff') format('woff'),   /* Modern Browsers */url('http://www.ford.com/resources/ford/general/typefaces/Antenna/small/regular.ttf') format('truetype'),   /* Safari,  Android,  iOS */url('http://www.ford.com/resources/ford/general/typefaces/Antenna/small/regular.svg#fordngbs-antenna-small') format('svg');
+  /* Legacy iOS */}
+@font-face  {
+font-family: 'fordngbs-antenna';
+src:  url('http://www.ford.com/resources/ford/general/typefaces/Antenna/regular/regular.eot');
+ /*IE9 Compatibility Mode*/src:  url('http://www.ford.com/resources/ford/general/typefaces/Antenna/regular/regular.eot?#iefix') format('embedded-opentype'),   /* IE6-IE8 */url('http://www.ford.com/resources/ford/general/typefaces/Antenna/regular/regular.woff') format('woff'),   /* Modern Browsers */url('http://www.ford.com/resources/ford/general/typefaces/Antenna/regular/regular.ttf') format('truetype'),   /* Safari,  Android,  iOS */url('http://www.ford.com/resources/ford/general/typefaces/Antenna/regular/regular.svg#fordngbs-antenna') format('svg');
+  /* Legacy iOS */}
+@font-face  {
+font-family: 'fordngbs-antenna-bold';
+src:  url('http://www.ford.com/resources/ford/general/typefaces/Antenna/regular/bold.eot');
+ /*IE9 Compatibility Mode*/src:  url('http://www.ford.com/resources/ford/general/typefaces/Antenna/regular/bold.eot?#iefix') format('embedded-opentype'),   /* IE6-IE8 */url('http://www.ford.com/resources/ford/general/typefaces/Antenna/regular/bold.woff') format('woff'),   /* Modern Browsers */url('http://www.ford.com/resources/ford/general/typefaces/Antenna/regular/bold.ttf') format('truetype'),   /* Safari,  Android,  iOS */url('http://www.ford.com/resources/ford/general/typefaces/Antenna/regular/bold.svg#fordngbs-antenna-bold') format('svg');
+ /* Legacy iOS */}
+ 

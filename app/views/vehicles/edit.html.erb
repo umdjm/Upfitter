@@ -24,7 +24,7 @@
   <% end %>
 </div>
 
-<%= form_for @vehicle, :html =>{:multipart=>true} do |f| %>
+<%= form_for @vehicle, :class => "edit_form", :html =>{:multipart=>true} do |f| %>
 
     <div class="field">
       <%= f.label :name %><br />

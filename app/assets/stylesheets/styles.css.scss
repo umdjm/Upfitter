@@ -1,0 +1,452 @@
+/* Style Sheet for Transit Configurator Site */
+
+/* Body */
+
+body {
+	font-family: 'fordngbs-antenna', Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #fff;
+	background: #fff;
+}
+
+.parentContainer {
+	background: #fff image-url("background.jpg") top right no-repeat;
+	width: 100%;
+	padding-bottom: 45px;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	clear: both;
+}
+
+.loader {
+	display: none;
+	position: fixed;
+	z-index: 9999;
+	width: 200px;
+	height: 200px;;
+	top: 50%;
+	left: 50%;
+	margin-left: -100px;
+	margin-top: -100px;
+	background: #fff;
+}
+
+.loader .loading {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -10px;
+	margin-left: -10px;
+}
+
+/* Type */
+
+h1 {
+	color: #fff;
+	font-size: 29px;
+	font-family: 'fordngbs-antenna-bold', 'Arial Black', Helvetica, sans-serif;
+}
+
+h2 {
+	color: #fff;
+	font-size: 20px;
+	font-family: 'fordngbs-antenna', Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+
+header {
+	width: 100%;
+	height: 88px;
+	position: relative;
+}
+
+header .siteName {
+	float: left;
+	width: 70%;
+}
+
+header .siteName h1 {
+	float: left;
+	margin: 0;
+	line-height: 60px;
+	height: 60px;
+	padding-left: 10px;
+}
+
+header .bft-logo {
+	float: left;
+	display: block;
+	border: 0;
+}
+
+header h1 a {
+	font-size: 15px;
+	text-decoration: none;
+	color: #fff;
+	height: 60px;
+	line-height: 60px;
+}
+
+/* Navigation */
+
+.mainNav ul {
+	padding: 0;
+	margin: 0;
+	float: left;
+	background: transparent image-url("nav.png") top left no-repeat;
+	width: 1000px;
+	height: 32px;
+	line-height: 32px;
+}
+
+.mainNav ul li {
+	display: inline;
+	float: left;
+	list-style: none;
+	width: 200px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.mainNav ul li a {
+	text-align: center;
+	width: 200px;
+	height: 32px;
+	line-height: 32px;
+	text-transform: uppercase;
+	color: #6d6d6d;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: 'fordngbs-antenna-bold', 'Arial Black', Helvetica, sans-serif;
+}
+
+.mainNav ul li ul {
+	background: transparent image-url("drop-down.png") top left no-repeat;
+	display: none;
+	width: 240px;
+	height: 84px;
+	margin-top: -2px;
+	margin-left: -24px;
+	padding-left: 28px;
+}
+
+.mainNav ul li ul li {
+	display: block;
+	float: none;
+	text-align: left;
+	font-size: 11px;
+	margin: 0;
+	height: 18px;
+	line-height: 18px;
+	padding: 2px 0 0 0;
+}
+
+.mainNav ul li ul li a {
+	text-transform: none;
+	color: #fff;
+	height: 18px;
+	line-height: 18px;
+}
+
+
+.mainNav ul li:hover ul {
+	display: block;
+}
+
+/* Live Assistance */
+
+.assistance {
+	position: absolute;
+	left: 796px;
+	top: 4px;
+	width: 204px;
+	height: 34px;
+}
+
+.assistance a {
+	display: block;
+	background: image-url("live-assistance.png") top left no-repeat;
+	width: 204px;
+	height: 34px;
+	text-indent: -9999px;
+}
+
+
+/* Main Container */
+
+.mainContainer {
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+
+/* Home Transits */
+
+.transit, .transit-connect {
+	float: left;
+}
+
+/* Step Nav */
+
+.stepNav {
+	width: 100%;
+	height: 65px;
+	float: left;
+	background: transparent image-url("orange-stripe.png") top left repeat-x;
+}
+
+.stepNav ul {
+	margin: 0;
+	padding: 16px 0 0 0;
+	list-style: none;
+}
+
+.stepNav li {
+	display: inline;
+	float: left;
+	text-align: center;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.stepNav li.step3 {
+	padding-left: 0;
+}
+
+.stepNav li.step1 a {
+	background: transparent image-url("step1.png") top left no-repeat;
+	text-indent: -9999px;
+	width: 306px;
+	height: 32px;
+	line-height: 32px;
+	display: block;
+}
+
+.stepNav li.step2 a {
+	background: transparent image-url("step2.png") top left no-repeat;
+	text-indent: -9999px;
+	width: 340px;
+	height: 32px;
+	line-height: 32px;
+	display: block;
+}
+
+.stepNav li.step3 a {
+	background: transparent image-url("step3.png") top left no-repeat;
+	text-indent: -9999px;
+	width: 306px;
+	height: 32px;
+	line-height: 32px;
+	display: block;
+}
+
+/* Garage */
+
+.garageSprite {
+	height: 505px;
+	width: 900px;
+	float: left;
+	overflow: hidden;
+	background: #000 image-url("garage-sprite.jpg") top left no-repeat;
+}
+
+/* Timeline */
+
+body.home nav.timeline {
+	display: none;
+}
+
+.timeline {
+	float: left;
+	width: 100%;
+	background: #fff;
+}
+
+/* Footer */
+
+footer {
+	background: #344553;
+	height: 45px;
+	width: 100%;
+	float: left;
+}
+
+
+
+/*  Select Vehicle*/
+
+/* Container-Bar*/
+.select-nav {
+	width:1085px;
+	height:288px;
+	background-color:#FFF;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.select-nav h2 {
+	font-size:15px;
+	float:left;
+	padding: 10px 0 0 55px;
+}
+/* Container-Bar*/
+
+
+
+/* Navigation for Help, Preview Config, List, Expand*/
+.control-panel{
+	float:right;
+	padding: 10px 25px 10px 0;
+}
+.control-panel ul li {
+	list-style-type: none;
+	float:left;
+	
+}
+.control-panel ul li a {
+	font-size:12px;
+	margin:0 5px 0 5px;
+	padding: 5px 15px 0px 25px;
+	height:20px;
+	display:block;
+	color:#FFF;
+	border:2px solid #0D4362;
+	background-color:#0D4362;
+	text-decoration:none;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	cursor:pointer;
+}
+.control-panel ul li a:hover {
+	background-color:#21A0E2;
+	border:2px solid #2070AE;
+}
+.select-nav .control-panel ul span   {
+	margin-left:5px;
+}
+.help a, .preview a, .list a, .list a, .expand a {
+	background-repeat: no-repeat;
+}
+
+.select-nav .control-panel ul .help a{
+	background-image:image-url("icon-question-mark.png");
+	background-position: 7px center;
+}
+.select-nav .control-panel ul .preview a {
+	background-image:image-url("icon-maginify.png");
+	background-position: 7px center;
+}
+.select-nav .control-panel ul .list a {
+	background-image: image-url("icon-list.png");
+	background-position: 7px center;
+}
+
+.select-nav .control-panel ul .expand a{
+	background-image: image-url("icon-expand.png");
+	background-position: 7px center;
+}
+
+
+
+/*  Slider Content */
+
+.slider-container {
+	background-color: #f9f9f9;
+	float:left;
+	width:1040px;
+	height:191px;
+	padding: 5;
+	margin-left: 25px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	border:2px solid #e5e5e5;	
+}
+
+.slider-content {
+	padding:0px;
+	margin: 0px;
+	overflow:hidden;
+	width:960px;
+	height:185px;
+}
+
+.select-nav h2 {
+	color:#2F3D4E;
+}
+.select-nav .slider-container .slider-content li  {
+	display:block;
+}
+
+.select-nav .slider-container .slider-content  a {
+	height:170px;
+	width: 226px;
+	color:#000;
+	text-decoration:none;
+	background-color:#F9F9F9;
+	border: 2px solid #F9F9F9;
+	display:block;
+	padding:5px 0px 0px 0px;
+	margin:5px 5px 0 5px;
+	float:left;
+	font-size:12px;
+	text-align:center;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+}
+
+.select-nav .slider-container .slider-content .transit-vehicle a .vehicle-names {
+	background-color:#fff;
+}
+
+.select-nav .slider-container .slider-content .transit-vehicle a:hover .vehicle-names {
+	background-color:#2E97CD;
+	color:#FFF;
+}
+
+.select-nav .slider-container .slider-content .transit-vehicle a:hover {
+	background-color:#cdcdcd;
+	border: 2px solid #898E94;
+	padding:5px 0px 0px 0px;
+}
+.left-control {
+	height:175px;
+	float:left;
+	padding-left:28px;
+}
+.right-control {
+	height:175px;
+	float:right;
+	padding-right:28px;
+}
+.left-control img, .right-control img  {
+	padding-top:75px;
+}
+.vehicle-names {
+	color:#000;
+	float:left;
+	width:170px;
+	margin-top:8px;
+	margin-bottom:5px;
+	margin-left:25px;
+	height:28px;
+	padding: 13px 0px 0px 0px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	border: 2px solid #898E94;
+}
+
+
+span.description-text{
+	float:left;
+	width:170px;
+	padding-left:25px;
+	text-align:center;
+	
+}
